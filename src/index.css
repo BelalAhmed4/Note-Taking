@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-300;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.active {
+  background-color: yellow; 
+}
+
+.result-modal[open] {
+  animation: slide-in-from-top 0.35s ease-out;
+}
+
+.result-modal::backdrop {
+  background: rgba(0, 0, 0, 0.9);
+}
